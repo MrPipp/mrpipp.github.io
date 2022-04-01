@@ -1,1 +1,34 @@
-Hello world!!!
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<script>
+    $(function(){
+        $(".btn1").click(function() {
+            //alert("btn");
+            //upd();
+            //var layer2 = document.getElementById("cha").innerHTML = "/index2.html";
+            //$( "#myElement" ).load( "/index2.html" );
+            //var layer2 = document.getElementById("cha").load("/index2.html");
+            $(document.getElementById("cha")).load("index2.html");
+        });
+    });
+    
+
+
+</script>
+
+<body>
+    <divc lass="layer2">
+        <button class="btn1" id=""> BTN </button>
+    </div>
+
+    <div class="layer2"  id="cha">
+        Привет
+    </div>
+</body>
+</html>

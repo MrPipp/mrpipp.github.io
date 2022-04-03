@@ -157,6 +157,11 @@
     </style>
     <script type="text/javascript">
         jQuery(document).ready(function() {
+
+
+            $(document.getElementById("mainframe")).load("https://mrpipp.github.io/index.html");
+
+
             $("input[type=checkbox],input[type=radio],option,select").hover(function() {
                 $(this).css('cursor', 'pointer');
             });
@@ -184,9 +189,16 @@
     });
 </script>
 
+
+
+
 <body class="skin-purple" id="body" active_language="Russian" lang_list="Russian">
-    <button class="uibtn">UI TEST</button>
-    <iframe src="https://mrpipp.github.io/" frameborder="0"></iframe>
+    <button class="uibtn">UI TEST</button> //
 </body>
+
+<body id="mainframe">
+
+</body>
+Load
 
 </html>

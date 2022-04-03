@@ -159,7 +159,6 @@
         jQuery(document).ready(function() {
 
 
-            $(document.getElementById("mainframe")).load("https://mrpipp.github.io/index.html");
 
 
             $("input[type=checkbox],input[type=radio],option,select").hover(function() {
@@ -180,10 +179,12 @@
 <script>
     $(function() {
         $(".uibtn").click(function() {
-            var iframe = document.getElementsByTagName('iframe')[0];
-            var iframeDoc = iframe.contentWindow.document;
+            //var iframe = document.getElementsByTagName('iframe')[0];
+            //var iframeDoc = iframe.contentWindow.document;
 
-            iframeDoc.getElementById("input1").value = "888";
+            //iframeDoc.getElementById("input1").value = "888";
+            $(document.getElementById("mainframe")).load("https://mrpipp.github.io/index.html");
+
             alert("qq");
         });
     });

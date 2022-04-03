@@ -9,12 +9,9 @@
 <script>
     $(function(){
         $(".btn1").click(function() {
-            //alert("btn");
-            //upd();
-            //var layer2 = document.getElementById("cha").innerHTML = "/index2.html";
-            //$( "#myElement" ).load( "/index2.html" );
-            //var layer2 = document.getElementById("cha").load("/index2.html");
             $(document.getElementById("cha")).load("index2.html");
+            document.getElementById("input1").value = "888";
+
         });
     });
     
@@ -25,6 +22,10 @@
 <body>
     <divc lass="layer2">
         <button class="btn1" id=""> BTN </button>
+    </div>
+    <br>
+    <div>
+        <input type="text" id="input1" value="777">
     </div>
 
     <div class="layer2"  id="cha">
